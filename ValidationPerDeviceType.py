@@ -29,7 +29,7 @@ def device_conf(hostname,passd,device_type,kind,ip):
         'password': passd,     
     }
     
-    print ('\n ***************************************************** Connecting to ' + hostname + ' *****************************************************n')
+    print ('\n ***************************** ' + hostname + ' *****************************')
     try:
         net_conn = ConnectHandler(**deviceList)
         #if net_conn is None:
@@ -49,42 +49,42 @@ def device_conf(hostname,passd,device_type,kind,ip):
             #Number total of DMVPN tunnels
             Tnhrp = net_conn.send_command("sh ip nhrp | count Tunnel")
             print()
-            print("Total DMVPN tunnels: " + Tnhrp.split().pop(-1) + "\n")
+            print("Total DMVPN tunnels: " + Tnhrp.split().pop(-1))
             #number of dmvpn tunnels UP
             UPnhrp = net_conn.send_command("sh dmvpn | count UP")
-            print("Total DMVPN tunnels UP: " + UPnhrp.split().pop(-1) + "\n")
+            print("Total DMVPN tunnels UP: " + UPnhrp.split().pop(-1))
             #number of bgp session
             SBGP = net_conn.send_command("sh bgp all neighbors | count BGP state")
-            print("Total BGP sesions: " + SBGP.split().pop(-1) + "\n")
+            print("Total BGP sesions: " + SBGP.split().pop(-1))
             #number of bgp session up
             UPBGP = net_conn.send_command("sh bgp all neighbors | count up for")
-            print("Total BGP sesions UP: " + UPBGP.split().pop(-1) + "\n")
+            print("Total BGP sesions UP: " + UPBGP.split().pop(-1))
 
         elif kind == "lns":
             #Number total of VPDN sessions
             Tvpdn = net_conn.send_command("sh vpdn session | i To")
             print()
-            print(Tvpdn + "\n")
+            print(Tvpdn)
             #VPDN Tunnels
             Svpdn = net_conn.send_command("sh vpdn Tunnel | i To")
-            print(Svpdn + "\n")
+            print(Svpdn)
             #LNS connections
             Clns = net_conn.send_command("sh user wide | c Vi")
-            print("Total LNS sessions: " + Clns.split().pop(-1) + "\n")
+            print("Total LNS sessions: " + Clns.split().pop(-1))
             #number of bgp session
             SBGP = net_conn.send_command("sh bgp all neighbors | count BGP state")
-            print("Total BGP sessions: " + SBGP.split().pop(-1) + "\n")
+            print("Total BGP sessions: " + SBGP.split().pop(-1))
             #number of bgp session up
             UPBGP = net_conn.send_command("sh bgp all neighbors | count up for")
-            print("Total BGP sessions UP: " + UPBGP.split().pop(-1) + "\n")
+            print("Total BGP sessions UP: " + UPBGP.split().pop(-1))
 
         elif kind == "isg":
             #number of bgp session
             SBGP = net_conn.send_command("sh bgp all neighbors | count BGP state")
-            print("Total BGP sessions: " + SBGP.split().pop(-1) + "\n")
+            print("Total BGP sessions: " + SBGP.split().pop(-1))
             #number of bgp session up
             UPBGP = net_conn.send_command("sh bgp all neighbors | count up for")
-            print("Total BGP sessions UP: " + UPBGP.split().pop(-1) + "\n")
+            print("Total BGP sessions UP: " + UPBGP.split().pop(-1))
             #number of buncies sesion in BGP
             BunBGP = net_conn.send_command("sh bgp all summ | ex w|d")
             with open('FlapsPeerISG.txt', 'w') as temp:
@@ -93,7 +93,7 @@ def device_conf(hostname,passd,device_type,kind,ip):
 
             with open('FlapsPeerISG.txt', 'r') as f:
                 omited = f.readlines()[10:]
-                print("The peers Bouncing or UP within 24hrs are: " + '\n')
+                print("The peers Bouncing or UP within last 24hrs are: ")
                 i = 11
                 for line in omited:
                     print(line)
