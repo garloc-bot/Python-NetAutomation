@@ -1,0 +1,11 @@
+BGP table version is 528, main routing table version 528
+46 path entries using 6256 bytes of memory
+15/11 BGP path/bestpath attribute entries using 4440 bytes of memory
+11 BGP AS-PATH entries using 376 bytes of memory
+9 BGP community entries using 216 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 21000 total bytes of memory
+BGP activity 469/430 prefixes, 595/549 paths, scan interval 60 secs
+
+10.63.61.215    4   4259106858    1342    1296      528    0    0 19:39:06        4

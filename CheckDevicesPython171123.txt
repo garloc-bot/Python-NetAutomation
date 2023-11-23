@@ -1,0 +1,108 @@
+Enter RSA CODE: 2023-11-17 20:50:30.301730
+
+ #### Connecting to entbas-dmvpn-pe-01 ####
+
+Connected to entbas-dmvpn-pe-01 executing..
+
+entbas-dmvpn-pe-01#
+
+Total DMVPN tunnels: 1597
+
+Total DMVPN tunnels UP: 1229
+
+Total BGP sesions: 1698
+
+Total BGP sesions UP: 1215
+
+
+ #### Connecting to entbas-dmvpn-pe-02 ####
+
+Connected to entbas-dmvpn-pe-02 executing..
+
+entbas-dmvpn-pe-02#
+
+Total DMVPN tunnels: 1361
+
+Total DMVPN tunnels UP: 1256
+
+Total BGP sesions: 1371
+
+Total BGP sesions UP: 1258
+
+
+ #### Connecting to entbas-dmvpn-pe-03 ####
+
+Connected to entbas-dmvpn-pe-03 executing..
+
+entbas-dmvpn-pe-03#
+
+Total DMVPN tunnels: 314
+
+Total DMVPN tunnels UP: 147
+
+Total BGP sesions: 336
+
+Total BGP sesions UP: 149
+
+
+ #### Connecting to entbas-dmvpn-pe-05 ####
+
+Connected to entbas-dmvpn-pe-05 executing..
+
+entbas-dmvpn-pe-05#
+
+Total DMVPN tunnels: 5070
+
+Total DMVPN tunnels UP: 4098
+
+Total BGP sesions: 5180
+
+Total BGP sesions UP: 4051
+
+
+ #### Connecting to entbas-dmvpn-pe-06 ####
+
+Connected to entbas-dmvpn-pe-06 executing..
+
+entbas-dmvpn-pe-06#
+
+Total DMVPN tunnels: 2249
+
+Total DMVPN tunnels UP: 2056
+
+Total BGP sesions: 2267
+
+Total BGP sesions UP: 2058
+
+
+ #### Connecting to entell-lns-01 ####
+
+Connected to entell-lns-01 executing..
+
+entell-lns-01#
+
+L2TP Session Information Total tunnels 1650 sessions 2752
+
+L2TP Tunnel Information Total tunnels 1650 sessions 2752
+
+Total LNS sessions: 2910
+
+Total BGP sessions: 1305
+
+Total BGP sessions UP: 1196
+
+
+ #### Connecting to entell-isg-02 ####
+
+Connected to entell-isg-02 executing..
+
+entell-isg-02#
+Total BGP sessions: 12
+
+Total BGP sessions UP: 12
+
+The peers Bouncing or UP within 24hrs are: 
+
+10.62.61.215    4   4219106858     857     824      414    0    0 12:26:46        4
+
+10.62.61.221    4   4219106881    1315    1313      414    0    0 19:52:59        0

@@ -1,0 +1,168 @@
+2023-11-21 16:23:04.657182
+Enter RSA CODE: 
+ ***************************************************** Connecting to entbas-dmvpn-pe-01 *****************************************************n
+Connected to entbas-dmvpn-pe-01 executing..
+
+
+Total DMVPN tunnels: 1587
+
+Total DMVPN tunnels UP: 1222
+
+Total BGP sesions: 1699
+
+Total BGP sesions UP: 1206
+
+
+ ***************************************************** Connecting to entbas-dmvpn-pe-02 *****************************************************n
+Connected to entbas-dmvpn-pe-02 executing..
+
+
+Total DMVPN tunnels: 1359
+
+Total DMVPN tunnels UP: 1259
+
+Total BGP sesions: 1371
+
+Total BGP sesions UP: 1259
+
+
+ ***************************************************** Connecting to entbas-dmvpn-pe-03 *****************************************************n
+Connected to entbas-dmvpn-pe-03 executing..
+
+
+Total DMVPN tunnels: 310
+
+Total DMVPN tunnels UP: 147
+
+Total BGP sesions: 336
+
+Total BGP sesions UP: 150
+
+
+ ***************************************************** Connecting to entbas-dmvpn-pe-05 *****************************************************n
+Connected to entbas-dmvpn-pe-05 executing..
+
+
+Total DMVPN tunnels: 5051
+
+Total DMVPN tunnels UP: 4053
+
+Total BGP sesions: 5179
+
+Total BGP sesions UP: 4007
+
+
+ ***************************************************** Connecting to entbas-dmvpn-pe-06 *****************************************************n
+Connected to entbas-dmvpn-pe-06 executing..
+
+
+Total DMVPN tunnels: 2243
+
+Total DMVPN tunnels UP: 2056
+
+Total BGP sesions: 2266
+
+Total BGP sesions UP: 2056
+
+
+ ***************************************************** Connecting to entell-lns-01 *****************************************************n
+Connected to entell-lns-01 executing..
+
+
+L2TP Session Information Total tunnels 1645 sessions 2737
+
+L2TP Tunnel Information Total tunnels 1645 sessions 2737
+
+Total LNS sessions: 2896
+
+Total BGP sessions: 1305
+
+Total BGP sessions UP: 1194
+
+
+ ***************************************************** Connecting to entell-lns-02 *****************************************************n
+Connected to entell-lns-02 executing..
+
+
+L2TP Session Information Total tunnels 701 sessions 1025
+
+L2TP Tunnel Information Total tunnels 701 sessions 1025
+
+Total LNS sessions: 1060
+
+Total BGP sessions: 291
+
+Total BGP sessions UP: 144
+
+
+ ***************************************************** Connecting to entbas-lns-01 *****************************************************n
+Connected to entbas-lns-01 executing..
+
+
+L2TP Session Information Total tunnels 1664 sessions 2428
+
+L2TP Tunnel Information Total tunnels 1664 sessions 2428
+
+Total LNS sessions: 2429
+
+Total BGP sessions: 1345
+
+Total BGP sessions UP: 407
+
+
+ ***************************************************** Connecting to entbas-lns-02 *****************************************************n
+Connected to entbas-lns-02 executing..
+
+
+L2TP Session Information Total tunnels 903 sessions 1397
+
+L2TP Tunnel Information Total tunnels 903 sessions 1397
+
+Total LNS sessions: 1397
+
+Total BGP sessions: 294
+
+Total BGP sessions UP: 152
+
+
+ ***************************************************** Connecting to entell-isg-01 *****************************************************n
+Connected to entell-isg-01 executing..
+
+Total BGP sessions: 12
+
+Total BGP sessions UP: 12
+
+The peers Bouncing or UP within 24hrs are: 
+
+
+ ***************************************************** Connecting to entell-isg-02 *****************************************************n
+Connected to entell-isg-02 executing..
+
+Total BGP sessions: 12
+
+Total BGP sessions UP: 12
+
+The peers Bouncing or UP within 24hrs are: 
+
+10.62.61.215    4   4219106858    1333    1290      432    0    0 19:25:03        4
+
+ ***************************************************** Connecting to entbas-isg-01 *****************************************************n
+Connected to entbas-isg-01 executing..
+
+Total BGP sessions: 10
+
+Total BGP sessions UP: 10
+
+The peers Bouncing or UP within 24hrs are: 
+
+
+ ***************************************************** Connecting to entbas-isg-02 *****************************************************n
+Connected to entbas-isg-02 executing..
+
+Total BGP sessions: 12
+
+Total BGP sessions UP: 12
+
+The peers Bouncing or UP within 24hrs are: 
+
+10.63.61.215    4   4259106858    1433    1377      512    0    0 20:46:38        4
