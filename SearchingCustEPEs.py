@@ -29,20 +29,17 @@ def device_conf(hostname,passd,device_type,ip,kind):
     if kind == "bpe":
           try:
         
-              net_conn = ConnectHandler(**deviceList)
-
               print ('\n ***************************** ' + hostname + ' *****************************')
-              #Checking i CPE is there
-              output = net_conn.send_command("show interface description")
-              filtro = re.search(CPE, output, re.M)
-              print(filtro)
-
+              net_conn = ConnectHandler(**deviceList)
+              #Checking if CPE is there
+              output = net_conn.send_command("show interface description | i " + CPE)
               net_conn.disconnect()
+              print(output)
 
           except NetMikoAuthenticationException:
                 print ('Authentication Failure')
           except NetMikoTimeoutException:
-                print('Device not reachable')
+                print(hostname +' '+ ip + ' Device not reachable')
           except SSHException:
                 print('Make sure SSH is enabled')
     return kind
