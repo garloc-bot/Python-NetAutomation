@@ -3,14 +3,13 @@
 import sys
 from netmiko import ConnectHandler
 from getpass import getpass
-import pandas as pd
 from paramiko.ssh_exception import SSHException
 from netmiko.exceptions import NetMikoAuthenticationException
 from netmiko.exceptions import NetMikoTimeoutException
 from netmiko import ConnLogOnly
 
 #RoS = input('Enter Hostname/IP: ')
-# user = input('Enter USername')
+user = input('Enter USername')
 passd = input('Enter RSA CODE: ')
 
 hosts_csv = "~/host_csv.csv"
@@ -21,7 +20,7 @@ def device_conf(hostname,passd,device_type):
         'device_type': device_type,
         #'ip': ip,
         'host': hostname,
-        'username': 'casseug',
+        'username': user,
         'password': passd,     
     }
 
