@@ -3,7 +3,6 @@
 import sys
 from netmiko import ConnectHandler
 from getpass import getpass
-import pandas as pd
 from paramiko.ssh_exception import SSHException
 from netmiko.exceptions import NetMikoAuthenticationException
 from netmiko.exceptions import NetMikoTimeoutException
@@ -12,7 +11,7 @@ from datetime import datetime
 
 
 #RoS = input('Enter Hostname/IP: ')
-# user = input('Enter USername')
+user = input('Enter USername')
 
 print(datetime.now())
 passd = input('Enter RSA CODE: ')
@@ -25,24 +24,15 @@ def device_conf(hostname,passd,device_type,kind,ip):
         'device_type': device_type,
         'ip': ip,
         'host': hostname,
-        'username': 'casseug',
+        'username': user,
         'password': passd,     
     }
     
     print ('\n ***************************** ' + hostname + ' *****************************')
     try:
         net_conn = ConnectHandler(**deviceList)
-        #if net_conn is None:
-        #    sys.exit("Loggin FAILED check the netmiko.log")
-        
+
         print("Connected to "+ hostname + ' executing..\n')
-
-        #conn = ConnLogOnly(**deviceList)
-        #if conn is None:
-        #    sys.exit("Loggin FAILED")
-        #print(conn.find_prompt())
-        #conn.disconnect()
-
 
         if kind == "dmvpn":
 
@@ -110,10 +100,6 @@ def device_conf(hostname,passd,device_type,kind,ip):
         #continue
     except SSHException:
         print('Make sure SSH is enabled')
-        #continue
-#    if net_conn is None:
-#        sys.exit("Loggin FAILED check the netmiko.log")
-        
 
 
 def device_detail(hosts_csv):
