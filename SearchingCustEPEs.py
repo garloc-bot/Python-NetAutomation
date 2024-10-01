@@ -2,7 +2,6 @@
 
 from netmiko import ConnectHandler
 from getpass import getpass
-import pandas as pd
 from paramiko.ssh_exception import SSHException
 from netmiko.exceptions import NetMikoAuthenticationException
 from netmiko.exceptions import NetMikoTimeoutException
@@ -11,10 +10,11 @@ import re
 
 print(datetime.now())
 passd = input('Enter RSA CODE: ')
+user = input('Enter username: ')
 
 hosts_csv = "~/host_csv.csv"
 CPE = input("please enter the CPE hostname: ")
-#pprt1475220001
+#pprt123123001
 
 def device_conf(hostname,passd,device_type,ip,kind):
 
@@ -22,7 +22,7 @@ def device_conf(hostname,passd,device_type,ip,kind):
         'device_type': device_type,
         'ip': ip,
         'host': hostname,
-        'username': 'casseug',
+        'username': user,
         'password': passd,     
     }
     
@@ -42,7 +42,7 @@ def device_conf(hostname,passd,device_type,ip,kind):
                 print(hostname +' '+ ip + ' Device not reachable')
           except SSHException:
                 print('Make sure SSH is enabled')
-    return kind
+
 
 def device_detail(hosts_csv):
     df = pd.read_csv('hosts_csv.csv')
