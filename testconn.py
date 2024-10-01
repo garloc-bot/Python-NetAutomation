@@ -4,13 +4,13 @@ from netmiko import ConnectHandler
 from getpass import getpass
 
 RoS = input('Enter Hostname/IP: ')
-# user = input('Enter USername')
+user = input('Enter USername')
 passd = input('Enter RSA CODE: ')
 
 Cisco1 = {
     'device_type' : 'cisco_ios',
     'host' : RoS,
-    'username' : 'casseug',
+    'username' : user,
     'password' : passd,    
 }
 
