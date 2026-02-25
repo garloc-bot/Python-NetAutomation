@@ -1,0 +1,31 @@
+ *** MoniF5 - F5 Pool statistics monitor (single device, user-selectable) ***
+
+Version 1.7 - date: 25-02-2025
+
+Description:
+- Connects via SDK to the F5 BIG-IP device and retrieves information from the Request GET API
+- Pulls:
+  * Hostname, F5 software version and HA status
+  * Current pool statistics (current connections)
+  * number of pools, virtual servers and nodes
+  * graphs of active pools and pools with more than 100 connections
+- The information is printed to the console and also saved to a text file and a PNG chart for future reference.
+- This version allows selection of device from predefined lists
+- This version allow user to run one device at a time
+
+Version 1.7 changes:
+- Save the chart to a file (PNG) and the resume details to a text file for future reference.
+- Save the chart and text file with a timestamp in the filename to avoid overwriting previous files.
+- Added a grid to the charts for better readability.
+- Added a timestamp to the chart for reference.
+- Improved the text file output to include more details about the pools and their current connections.
+- Menu to select the device to monitor from a predefined list of devices.
+
+Next versions may include:
+- Connect to multiple devices and compare the results in a single chart or report
+- Add more statistics to the report (eg. CPU usage, memory usage, etc.)
+- Add more detailed information about the pools and their members (eg. status, response time, etc.)
+- Graph the changes in pool statistics over time (eg. current connections over the last hour)
+- Other requests from users, feel free to reach out with suggestions or feedback!
+
+Author: Garlo Casseus (with a bit of help from AI :))
